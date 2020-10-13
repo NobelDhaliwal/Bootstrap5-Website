@@ -1,0 +1,211 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&family=IBM+Plex+Sans:wght@500&family=Vollkorn&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap" rel="stylesheet">
+    <title>B5</title>
+</head>
+
+<body>
+    <!-- NavBar section -->
+    <nav class="navbar navbar-expand-lg navbar-dark nav_g">
+        <a class="navbar-brand text-capitalize" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- mr :-stands for margin right and ml:-margin left -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <!-- class= text-lowercase,text-uppercase,text-capitalize -->
+                    <a class="nav-link text-capitalize" href="index.html">Home
+                        <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Ua</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <!-- NavBar section end here -->
+    <!-- About us Section Start -->
+    <!-- For top and bottom margin we use my and for 5 we will right my-5 -->
+    <section class="main_heading my-5">
+        <!-- text-center for making text center in class -->
+        <div class="text-center">
+            <h1 class="display-4">about us</h1>
+            <!-- For width we have w class and -25 means value -->
+            <!-- for margin left and right we 
+                    have mx.y for top and bottom,x-for left and right.mx-auto to make center-->
+            <hr class="w-25 mx-auto">
+        </div>
+        <!-- For responsive grid we use this -->
+        <div class="container-fluid">
+            <div class="row my-5">
+
+                <!-- 1.display:flex css property we write in bootstrap as d-flex 
+                   2.for flex-direction we write flex-column  -->
+                <div class="col-lg-6 col-md-6 col-12 col-xxl-6">
+                    <!-- HTML5 tell us to put img in figure tag -->
+                    <figure>
+                        <img src="https://cdn.pixabay.com/photo/2016/06/24/11/28/glasses-1477081_1280.jpg"
+                            alt="about img" class="img-fluid about_img">
+                        <!-- img-fluid class for responsive image -->
+                    </figure>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 col-xxl-6 d-flex flex-column 
+justify-content-center align-items-start">
+                    <h1>My Journey</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Quisquam in corrupti porro nisi qui magni, incidunt,
+                        deleniti cupiditate reiciendis iure perferendis molestias ullam,
+                        rerum modi vel nemo blanditiis perspiciatis consequatur?Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. </p>
+
+                    <button type="button" class="btn btn-outline-info" data-toggle="tooltip" data-placement="right"
+                        title="Who am i">Check More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About us Section end here -->
+    <!-- Scrollspy Start here-->
+    <div class="container">
+
+        <div class="row">
+            <div id="navbar-example" style="position: relative;">
+                <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#fat">@fat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mdo">@mdo</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">Dropdown</a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a class="dropdown-item" href="#one">one</a></li>
+                                <li><a class="dropdown-item" href="#two">two</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#three">three</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div data-spy="scroll" data-target="#navbar-example2" data-offset="0"
+                    style="height: 300px;overflow: scroll;" tabindex="0">
+
+                    <h4 id="fat">@fat</h4>
+                    <p>There was something in the tree. It was difficult to
+                        tell from the ground, but Rachael could see movement.
+                        She squinted her eyes and peered in the direction of the movement,
+                        trying to decipher exactly what she had spied. The more she peered,
+                        however, the more she thought it might be a figment of her imagination.
+                        Nothing seemed to move until the moment she began to take her eyes off the tree.
+                        Then in the corner of her eye, she would see the movement again
+                        and begin the process of staring again.</p>
+                    <h4 id="mdo">@mdo</h4>
+                    <p>There was something in the tree. It was difficult to
+                        tell from the ground, but Rachael could see movement.
+                        She squinted her eyes and peered in the direction of the movement,
+                        trying to decipher exactly what she had spied. The more she peered,
+                        however, the more she thought it might be a figment of her imagination.
+                        Nothing seemed to move until the moment she began to take her eyes off the tree.
+                        Then in the corner of her eye, she would see the movement again
+                        and begin the process of staring again.</p>
+                    <h4 id="one">one</h4>
+                    <p>There was something in the tree. It was difficult to
+                        tell from the ground, but Rachael could see movement.
+                        She squinted her eyes and peered in the direction of the movement,
+                        trying to decipher exactly what she had spied. The more she peered,
+                        however, the more she thought it might be a figment of her imagination.
+                        Nothing seemed to move until the moment she began to take her eyes off the tree.
+                        Then in the corner of her eye, she would see the movement again
+                        and begin the process of staring again.</p>
+                    <h4 id="two">two</h4>
+                    <p>There was something in the tree. It was difficult to
+                        tell from the ground, but Rachael could see movement.
+                        She squinted her eyes and peered in the direction of the movement,
+                        trying to decipher exactly what she had spied. The more she peered,
+                        however, the more she thought it might be a figment of her imagination.
+                        Nothing seemed to move until the moment she began to take her eyes off the tree.
+                        Then in the corner of her eye, she would see the movement again
+                        and begin the process of staring again.</p>
+                    <h4 id="three">three</h4>
+                    <p>There was something in the tree. It was difficult to
+                        tell from the ground, but Rachael could see movement.
+                        She squinted her eyes and peered in the direction of the movement,
+                        trying to decipher exactly what she had spied. The more she peered,
+                        however, the more she thought it might be a figment of her imagination.
+                        Nothing seemed to move until the moment she began to take her eyes off the tree.
+                        Then in the corner of her eye, she would see the movement again
+                        and begin the process of staring again.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-secondary text-center text-white">
+        <p>@Copyright NobelWeb's</p>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    <script>
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbar-example'
+        })
+    </script>
+</body>
+
+</html>

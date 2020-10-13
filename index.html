@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&family=IBM+Plex+Sans:wght@500&family=Vollkorn&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="index.css" media="screen">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap" rel="stylesheet">
+  <title>B5</title>
+</head>
+
+<body>
+  <!-- NavBar section -->
+  <nav class="navbar navbar-expand-lg navbar-dark nav_g">
+    <a class="navbar-brand text-capitalize" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- mr :-stands for margin right and ml:-margin left -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <!-- class= text-lowercase,text-uppercase,text-capitalize -->
+          <a class="nav-link text-capitalize" href="index.html">Home
+            <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <!-- NavBar section end here -->
+
+  <!-- Header Section Start here -->
+  <header>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="http://4.bp.blogspot.com/-unfACv9sxoU/VMaOC0XQiNI/AAAAAAAAJgA/QzKE9MBr6OM/s1600/1920x1080-hd-wallpapers-024.jpg"
+            class="d-block w-100" alt="city_img">
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.droid-life.com/wp-content/uploads/2013/01/googlenownewyork.png" class="d-block w-100"
+            alt="header_pics">
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2016/08/30/16/26/banner-1631296_1280.jpg" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2016/06/24/11/28/glasses-1477078__340.jpg" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2015/09/21/14/45/banner-header-949928_1280.jpg" alt="...">
+        </div>" alt="header_pics">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    </div>
+  </header>
+  <!-- Header section end -->
+
+  <!-- About us Section Start -->
+  <!-- For top and bottom margin we use my and for 5 we will right my-5 -->
+  <section class="main_heading my-5">
+    <!-- text-center for making text center in class -->
+    <div class="text-center">
+      <h1 class="display-4">about us</h1>
+      <!-- For width we have w class and -25 means value -->
+      <!-- for margin left and right we 
+                    have mx.y for top and bottom,x-for left and right.mx-auto to make center-->
+      <hr class="w-25 mx-auto">
+    </div>
+    <!-- For responsive grid we use this -->
+    <div class="container-fluid">
+      <div class="row my-5">
+
+        <!-- 1.display:flex css property we write in bootstrap as d-flex 
+                   2.for flex-direction we write flex-column  -->
+        <div class="col-lg-6 col-md-6 col-12 col-xxl-6">
+          <!-- HTML5 tell us to put img in figure tag -->
+          <figure>
+            <img src="https://cdn.pixabay.com/photo/2016/06/24/11/28/glasses-1477081_1280.jpg" alt="about img"
+              class="img-fluid about_img">
+            <!-- img-fluid class for responsive image -->
+          </figure>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 col-xxl-6 d-flex flex-column 
+justify-content-center align-items-start">
+          <h1>My Journey</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Quisquam in corrupti porro nisi qui magni, incidunt,
+            deleniti cupiditate reiciendis iure perferendis molestias ullam,
+            rerum modi vel nemo blanditiis perspiciatis consequatur?Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. </p>
+          <button type="button" class="btn btn-outline-info" data-toggle="tooltip" data-placement="right"
+            title="Who am i">Check More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About us Section end here -->
+
+  <!-- our service section start here -->
+  <section class="main_heading my-5 bg-secondary pt-5">
+    <div class="text-center">
+      <h1>Our Services</h1>
+      <hr class="w-25 mx-auto">
+    </div>
+    <!-- First Card -->
+    <div class="container services">
+      <div class="row">
+        <div class="col-md-4 col-12 col-xxl-12 mx-auto">
+          <div class="card mb-3">
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  src="https://images.unsplash.com/photo-1547658718-1cdaa0852790?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+                  class="ïmg_fluid" alt="service_img">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Second Card -->
+        <div class="col-md-4 col-12 col-xxl-12 mx-auto">
+          <div class="card mb-3">
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  src="https://media.istockphoto.com/photos/digital-marketing-business-strategy-businessman-using-tablet-sales-picture-id1150397416"
+                  class="ïmg_fluid" alt="service_img">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Third Card -->
+        <div class="col-md-4 col-12 col-xxl-12 mx-auto">
+          <div class="card mb-3">
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  src="https://images.unsplash.com/photo-1566247284891-6e2e4fce0e72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                  class="ïmg_fluid" alt="service_img">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Cards End -->
+        <!-- Button here -->
+        <div class=" col-xxl-12 mx-auto text-center  my-5">
+          <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="right"
+            title="explore more">Check More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- our gallery part start here -->
+  <section class="main_heading my-5 pt-5">
+    <div class="text-center ">
+      <h1 class="display-4">Gallery</h1>
+      <hr class="w-25 mx-auto">
+    </div>
+    <!-- First Gallery Image -->
+    <div class="container services ">
+      <!-- gutter gy means top and bottom ,gx-left right -->
+      <!-- with help of gutter we can give spacing between div vertically and horizontally -->
+      <div class="row gy-5 my-5">
+        <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+          <figure>
+            <img src="https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg" alt="gallery"
+              class="img_fluid">
+          </figure>
+        </div>
+        <!-- Second Gallery Image -->
+        <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+          <figure>
+            <img src="https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg" alt="gallery"
+              class="img_fluid">
+          </figure>
+        </div>
+        <!-- THIRD Gallery Image -->
+        <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+          <figure>
+            <img src="https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg" alt="gallery"
+              class="img_fluid">
+          </figure>
+        </div>
+        <!-- ... Gallery Image -->
+        <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+          <figure>
+            <img src="https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg" alt="gallery"
+              class="img_fluid">
+          </figure>
+        </div>
+        <!-- ... Gallery Image -->
+        <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+          <figure>
+            <img src="https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg" alt="gallery"
+              class="img_fluid">
+          </figure>
+        </div>
+        <!-- .... Gallery Image -->
+        <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+          <figure>
+            <img src="https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg" alt="gallery"
+              class="img_fluid">
+          </figure>
+        </div>
+        <!-- .... Gallery Image -->
+        <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+          <figure>
+            <img src="https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg" alt="gallery"
+              class="img_fluid">
+          </figure>
+        </div>
+        <!-- .... Gallery Image -->
+        <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+          <figure>
+            <img src="https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg" alt="gallery"
+              class="img_fluid">
+          </figure>
+        </div>
+        <!-- .... Gallery Image -->
+        <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+          <figure>
+            <img src="https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg" alt="gallery"
+              class="img_fluid">
+          </figure>
+        </div>
+        <!-- .... Gallery Image -->
+        <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+          <figure>
+            <img src="https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg" alt="gallery"
+              class="img_fluid">
+          </figure>
+        </div>
+        <!-- .... Gallery Image -->
+        <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+          <figure>
+            <img src="https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg" alt="gallery"
+              class="img_fluid">
+          </figure>
+        </div>
+        <!-- .... Gallery Image -->
+        <div class="col-md-4 col-12 col-xxl-4 mx-auto">
+          <figure>
+            <img src="https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg" alt="gallery"
+              class="img_fluid">
+          </figure>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- .... Gallery End -->
+  <!-- offers start here -->
+  <section class="main_heading my-5 py-2 offers_style">
+    <div class="container-fluid ">
+      <div class="row">
+        <div class="col-xxl-12 col-12 py-5 text-center">
+          <!-- for white text color we have class text-white -->
+          <h1 class="text-white">Check out Bootstrap V5.0</h1>
+          <p>Never give up on something that you can't go a day without thinking about....✔✔</p>
+          <!-- Button here -->
+          <!-- Here we are using Modal -->
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">
+            <!-- .To use Icons have to put this  before button content-->
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+              <path fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5A.5.5 0 0 0 4 8z" />
+            </svg>
+            Check Out
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal code -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Bootstrap5</h5>
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3>Good Luck! for ur future...</h3>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a href="https://v5.getbootstrap.com/" target="_blank">
+            <button type="button" class="btn btn-primary">Save Changes</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal end here -->
+  <!-- Contact us Section Start here -->
+  <section class="main_heading my-5 pt-5">
+    <!-- text-center,text-capitalise class  -->
+    <div class="text-center">
+      <h1 class="display-4">Contact Us</h1>
+      <hr class="w-25 mx-auto">
+    </div>
+    <div class="container">
+      <div class="row">
+        <!-- mx-auto means margin-auto.to make items center -->
+        <div class="col-xxl-8 col-10 col-md-8 mx-auto">
+          <form>
+            <!-- Form INPUT -->
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Name</label>
+              <input type="text" class="form-control" placeholder="Enter your Name" id="exampleInputName1">
+            </div>
+            <!-- Form INPUT For email-->
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" placeholder="Enter your Email" class="form-control" id="exampleInputEmail1"
+                aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <!-- Password -->
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" placeholder="Enter your Password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <!-- CheckBOX -->
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <!-- TextArea -->
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <!-- To select Multiple Options -->
+            <div class="mb-3">
+              <label for="exampleDataList" class="form-label">Select City</label>
+              <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+              <datalist id="datalistOptions">
+                <option value="San Francisco"> </option>
+                <option value="New York"></option>
+                <option value="Seattle"></option>
+                <option value="Los Angeles"></option>
+                <option value="Chicago"></option>
+              </datalist>
+            </div>
+            <!-- Radio Buttons inline -->
+            <div class="mb-3">
+              <label class="pr-4">Select Gender</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Female</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">Others</label>
+              </div>
+            </div>
+            <!--  Submit Button -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-secondary text-center text-white">
+    <p>@Copyright NobelWeb's</p>
+
+  </footer>
+  <!-- Footer End here -->
+  <!-- Js Code To use Various Components -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+</body>
+
+</html>
